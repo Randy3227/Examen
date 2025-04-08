@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" 
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+        xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+   
+    <servlet>
+        <servlet-name>Authenticate</servlet-name>
+        <servlet-class>servlet.AuthentificationServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Authenticate</servlet-name>
+        <url-pattern>/Authenticate</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Depense</servlet-name>
+        <servlet-class>servlet.DepenseServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Depense</servlet-name>
+        <url-pattern>/Depense</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Prevision</servlet-name>
+        <servlet-class>servlet.PrevisionServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Prevision</servlet-name>
+        <url-pattern>/Prevision</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Etat</servlet-name>
+        <servlet-class>servlet.EtatServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Etat</servlet-name>
+        <url-pattern>/Etat</url-pattern>
+    </servlet-mapping>
+
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+
+</web-app>
+
